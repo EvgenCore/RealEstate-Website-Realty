@@ -1,0 +1,12 @@
+@import './normalize.css';
+body header {
+  background-color: red;
+  font-size: large;
+}
+body footer {
+  background-color: #fff;
+  color: green;
+  font-size: large;
+}
+
+/*# sourceMappingURL=styles.css.map */
