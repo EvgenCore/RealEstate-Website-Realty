@@ -3,13 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Immovables</title>
+    <meta name="description" content="Discover your dream home with our extensive listings of houses, apartments, and commercial properties. Expert advice and local market insights.">
+    <title>Realty</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
-<body>
+<body id="body">
+
+    <header aria-label="header">
+        <div class="container">
+            <section class="header-inner" aria-label="header inner container">
+                <!-- LOGO -->
+                <a href="#"><img src="./images/Logo.svg" alt="logo" aria-label="header logo"></a>
+
+                <!-- DESKTOP NAV -->
+                <nav class="nav-desktop" aria-label="header navigation desktop">
+                    <ul aria-label="header navigation list">
+                        <li>
+                            <a href="#" aria-label="navigation link to home">home</a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="navigation link to about">about</a>
+                        </li>
+                        <li>
+                           <a href="#" aria-label="navigation link to project">project</a>
+                        </li>
+                        <li>
+                           <a href="#" aria-label="navigation link to contact">contact</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- MOBILE NAV -->
+                <nav id="navMobile" class="nav-mobile" aria-label="header navigation mobile">
+                    
+                    <ul aria-label="header navigation list">
+                        <li>
+                            <a href="#" aria-label="navigation link to home">home</a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="navigation link to about">about</a>
+                        </li>
+                        <li>
+                             <a href="#" aria-label="navigation link to project">project</a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="navigation link to contact">contact</a>
+                        </li>
+                    </ul>
+
+                    
+                </nav>
+
+                <!-- BURGER MENU -->
+                <button id="burger" class="header-burger-menu">
+                    <span id="burgerTop" class="burger-top"></span>
+                    <span id="burgerMid" class="burger-mid"></span>
+                    <span id="burgerBot" class="burger-bottom"></span>
+                </button>
+
+            </section>
+        </div>
+        
+    </header>
+
+    <main>
+        
+        <!-- HERO SECTION -->
+        <section class="hero" aria-label="section hero">
+            <div class="container">
+                <section class="hero-inner" aria-label="section hero inner container">
+                    <div >
+                        <h1 class="hero-heading" aria-label="main heading">A home is built with love and dreams</h1>
+                        <div class="hero-description-container">
+                            <div>
+                                <p class="hero-description" aria-label="description">Real estate farm that makes your dreams true</p>
+                                <!-- BUTTONS -->
+                                <div class="hero-description-buttons-container">
+                                    <a href="#" class="hero-projects-button" aria-label="button - Our projects">Our projects</a>
+                                    <a href="#" class="hero-contact-button" aria-label="button - Contact us">Contact us</a>
+                                </div>
+                            </div>
+                            <div class="hero-arrow-container">
+                                <img src="./hero-section-arrow.svg" class="hero-arrow" alt="arrow that points to modern building">
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                </section>
+            </div>
+        </section>
+
+    </main>
 
 
+    <footer>
 
+    </footer>
 
     <script src="./scripts/main.js"></script>
 </body>
