@@ -11,7 +11,7 @@ a{
     margin: 0;
 }
 
-h1, h2, h3, h4, h5, p, span{
+h1, h2, h3, h4, h5, h6, p, span{
     margin: 0;
 }
 
@@ -272,7 +272,7 @@ header{
                 font-weight: normal;
                 font-size: 18px;
                 line-height: 120%;
-                color: #BDBDBD;
+                color: $dark-blue;
                 margin: 40px 0 0 0;             
             }
 
@@ -286,7 +286,7 @@ header{
                     font-weight: bold;
                     font-size: 14px;
                     line-height: 120%;
-                    color: $light-blue;  
+                    color: #407d93;  
                     text-transform: uppercase;       
                 }
 
@@ -320,7 +320,7 @@ header{
             font-size: 18px;
             font-weight:normal;
             line-height: 120%;
-            color: #BDBDBD;
+            color: $dark-blue;
         }
 
         .swiper{
@@ -385,6 +385,74 @@ header{
     }
 }
 
+/* FEEDBACK SECTION */
+.feedback-main{
+    padding: 0 0 126px 0;
+    .feedback-inner{
+        overflow: hidden;
+        .feedback-heading{
+            font-family: $default-font;
+            font-size: 48px;
+            font-weight: bold;
+            line-height: 120%;
+            color: $dark-blue;
+            text-align: center;
+        }
+
+        .swiper2{
+            margin: 75px 0 0 0;
+            
+            .swiper-wrapper{
+                
+                .swiper-slide{
+                    display: flex;
+                    gap: 125px;
+                    justify-content: center;
+                    align-items: center;
+
+                    .swiper2-img{
+                        object-fit: cover;
+                    }
+                    .swiper-description{
+                        cursor:default;
+                        h4{
+                            margin: 17px 0 0 0;
+                            font-family: $default-font;
+                            font-size: 32px;
+                            font-weight: bold;
+                            color: $dark-blue;
+                        }
+                        p{
+                            margin: 17px 0 0 0;
+                            font-family: $default-font;
+                            font-size: 24px;
+                            font-weight: 300;
+                            line-height: 120%;
+                            color: $dark-blue;
+                        }
+                        h5{
+                            margin: 17px 0 0 0;
+                            font-family: $default-font;
+                            font-size: 24px;
+                            font-weight: 600;
+                            line-height: 120%;
+                            color: $dark-blue;
+                        }
+                        h6{
+                            margin: 4px 0 0 0;
+                            font-family: $default-font;
+                            font-size: 18px;
+                            font-weight: 400;
+                            line-height: 120%;
+                            color: $dark-blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 
 
@@ -416,6 +484,18 @@ header{
         .about-inner{
             .about-right{
                 max-width: 500px;
+            }
+        }
+    }
+
+    .feedback-main{
+        .feedback-inner{
+            .swiper2{
+                .swiper-wrapper{
+                    .swiper-slide{
+                        gap: 50px;
+                    }
+                }
             }
         }
     }
@@ -470,6 +550,23 @@ header{
 
                     .about-statistic-value{
                         font-size: 40px;
+                    }
+                }
+            }
+        }
+    }
+
+    .feedback-main{
+        .feedback-inner{
+            .feedback-heading{
+
+                font-size: 39px;
+           
+            }
+            .swiper2{
+                .swiper-wrapper{
+                    .swiper-slide{
+                        gap: 20px;
                     }
                 }
             }
@@ -530,6 +627,19 @@ header{
             }
             .projects-description{
                 text-align: center;
+            }
+        }
+    }
+
+    .feedback-main{
+        .feedback-inner{
+            .swiper2{
+                .swiper-wrapper{
+                    .swiper-slide{
+                        gap: 50px;
+                        flex-wrap: wrap;
+                    }
+                }
             }
         }
     }
@@ -634,6 +744,42 @@ header{
                             }
                         } 
 
+                    }
+                }
+            }
+        }
+    }
+
+    .feedback-main{
+        .feedback-inner{
+            .swiper2{
+                .swiper-wrapper{
+                    .swiper-slide{
+                        .swiper-description{
+                            cursor:default;
+                            h4{
+                                
+                                
+                                font-size: 27px;
+                                
+                                
+                            }
+                            p{
+                               
+                                font-size: 20px;
+                              
+                            }
+                            h5{
+                                
+                                font-size: 24px;
+                              
+                            }
+                            h6{
+                            
+                                font-size: 18px;
+                                
+                            }
+                        }
                     }
                 }
             }

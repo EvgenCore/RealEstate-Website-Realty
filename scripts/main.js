@@ -66,13 +66,10 @@ const swiper = new Swiper('.swiper', {
     speed: 400,
     spaceBetween: 80,
     slidesPerView: 1,
-    
+    loop: true,
 
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-     autoplay: {
+
+    autoplay: {
         delay: 2000,
     },
     breakpoints:{
@@ -92,4 +89,17 @@ const swiper = new Swiper('.swiper', {
     }
 
 
-  });
+});
+
+const swiper2 = new Swiper('.swiper2', {
+    speed: 400,
+    loop: true,
+    slidesPerView: 1,
+    autoplay: {
+        delay: 3000,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+})
