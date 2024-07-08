@@ -276,7 +276,7 @@ header .header-burger-menu .burger-bottom {
   color: #1E3240;
 }
 .projects-main .projects-inner .swiper {
-  margin: 75px 0 0 0;
+  margin: 60px 0 0 0;
 }
 .projects-main .projects-inner .swiper .swiper-wrapper .swiper-slide {
   display: flex;
@@ -515,6 +515,9 @@ header .header-burger-menu .burger-bottom {
   }
   .about-main .about-inner .about-right .about-statistic-container {
     column-gap: 30px;
+  }
+  .projects-main .projects-inner .swiper {
+    margin: 40px 0 0 0;
   }
   .projects-main .projects-inner .projects-heading {
     font-size: 39px;
