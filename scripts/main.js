@@ -95,11 +95,9 @@ const swiper2 = new Swiper('.swiper2', {
     speed: 400,
     loop: true,
     slidesPerView: 1,
+    spaceBetween: 200,
     autoplay: {
         delay: 3000,
     },
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
+
 })
