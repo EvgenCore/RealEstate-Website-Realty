@@ -255,7 +255,7 @@ header{
                object-fit: cover;
             }
         }
-        
+
         .about-right{
             width: 50%;
             max-width: 540px;
@@ -303,7 +303,87 @@ header{
 
 }
  
+/* PROJECTS SECTION */
+.projects-main{
+    padding: 40px 0 85px 0;
+    .projects-inner{
+        .projects-heading{
+            font-family: $default-font;
+            font-size: 48px;
+            font-weight: bold;
+            line-height: 120%;
+            color: $dark-blue;
+        }
+        .projects-description{
+            margin: 15px 0 0 0;
+            font-family: $default-font;
+            font-size: 18px;
+            font-weight:normal;
+            line-height: 120%;
+            color: #BDBDBD;
+        }
 
+        .swiper{
+            margin: 75px 0 0 0;
+            .swiper-wrapper{
+               
+                .swiper-slide{
+                    
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+
+                    img{
+
+                        object-fit: cover;
+                    }
+                    
+                    
+                    .swiper-slide-inner{
+                        width: 350px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+
+                       
+
+                        .projects-slider-card-description{
+                            
+                            background-color: #FFFFFF;
+                            width: 290px;
+                            transform:translateY(-40px);
+                            padding: 22px 0 22px 20px;
+                            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                            
+                            .projects-slider-card-description-name{
+                                font-family: $default-font;
+                                font-size: 14px;
+                                font-weight: bold;
+                                line-height: 120%;
+                                color: $dark-blue;
+                                padding: 0 0 0 1px;
+                                
+                            }
+                            .projects-slider-card-description-map{
+                                margin: 6px 0 0 0;
+                                display: flex;
+                            }
+                            .projects-slider-card-description-map-address{
+                                font-family: $default-font;
+                                font-size: 10px;
+                                font-weight: 400;
+                                line-height: 120%;
+                                color: $dark-blue;
+                            }
+                        }
+                    }
+                    
+                  
+                }
+            }
+        }
+    }
+}
 
 
 
@@ -441,6 +521,18 @@ header{
             }
         }
     }
+
+    .projects-main{
+        .projects-inner{
+            .projects-heading{
+                text-align: center;
+               
+            }
+            .projects-description{
+                text-align: center;
+            }
+        }
+    }
 }
 
 @media(max-width:600px){
@@ -477,6 +569,19 @@ header{
             
         }
     }
+
+    .projects-main{
+        .projects-inner{
+            .projects-heading{
+                
+                font-size: 39px;
+            }
+            .projects-description{
+                text-align: center;
+                font-size: 16px;
+            }
+        }
+    }
 }
 
 @media(max-width:380px){
@@ -511,6 +616,27 @@ header{
                 }
             }
             
+        }
+    }
+
+    .projects-main{
+
+        .projects-inner{
+            .swiper{
+                .swiper-wrapper{
+                    .swiper-slide-inner{
+                        .swiper-slide{
+                            width: 100%;
+                            margin-right: 0;
+
+                            img{
+                                object-fit: cover;
+                            }
+                        } 
+
+                    }
+                }
+            }
         }
     }
 }

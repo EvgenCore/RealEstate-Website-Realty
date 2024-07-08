@@ -61,3 +61,35 @@ function burgerMenu() {
 }
 
 burgerMenu()
+
+const swiper = new Swiper('.swiper', {
+    speed: 400,
+    spaceBetween: 80,
+    slidesPerView: 1,
+    
+
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+     autoplay: {
+        delay: 2000,
+    },
+    breakpoints:{
+        1170:{
+            slidesPerView: 3,
+        },
+        850:{
+            slidesPerView: 2,
+            spaceBetween: 50,
+        },
+        450:{
+            slidesPerView: 1,
+            spaceBetween: 200,
+        }
+
+
+    }
+
+
+  });
