@@ -219,7 +219,7 @@
         <!-- FEEDBACK SECTION -->
         <section class="feedback-main" aria-label="section feedback">
             <div class="container">
-                <section class="feedback-inner" aria-label="section projects inner container">
+                <section class="feedback-inner" aria-label="section feedback inner container">
 
                     <h2 class="feedback-heading" aria-label="feedback heading">Few smiles and comment</h2>
 
@@ -258,6 +258,42 @@
                             </div>
                         </div>
                     </div>
+
+                </section>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="contact-main" aria-label="section contact">
+            <div class="container">
+                <section class="contact-inner" aria-label="section contact inner container">
+
+                    <section class="contact-left" aria-label="contact left part with building photo">
+                        <img src="./images/contactImg.svg" alt="building photo">
+                    </section>
+
+                    <section class="contact-form-container" aria-label="contact right part with contact form">
+                        <form action="/submit" >
+                            <h4 class="contact-heading" aria-label="contact form heading">Contact us</h4>
+                            <p class="contact-description" aria-label="contact form description">Feel free to contact us any time.</p> 
+                            
+                            <div class="form-first-group">
+                                <input type="text" id="name" class="name" name="name" placeholder="First name" aria-label="name input" required>
+                                <input type="text" id="lastName" class="lastName" name="lastName" placeholder="Last name" aria-label="last name input" required>
+                                <input type="email" id="email" class="email" name="email" placeholder="Email address" aria-label="email input" required>
+                                <input type="tel" id="phone" class="phone" name="phone"  placeholder="Phone number" aria-label="phone input" required>
+                            </div>
+
+                            <div class="form-second-group">
+                                <textarea id="message"  name="message" placeholder="Description" aria-label="additional input message" required></textarea>
+                            </div>
+
+                            <div class="form-submit-group">
+                                <button type="submit"  aria-label="submit form button">Get a quote</button>
+                                <p aria-label="important info">We don’t sell your email and spam</p>
+                            </div>
+                        </form>
+                    </section>
 
                 </section>
             </div>

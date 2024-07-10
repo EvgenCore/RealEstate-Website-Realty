@@ -429,6 +429,7 @@ header{
                             font-weight: 300;
                             line-height: 120%;
                             color: $dark-blue;
+                           
                         }
                         h5{
                             margin: 17px 0 0 0;
@@ -450,6 +451,115 @@ header{
                 }
             }
         }
+    }
+}
+
+/* CONTACT SECTION */
+.contact-main{
+    padding: 50px 0 100px 0;
+    .contact-inner{
+        display: flex;
+        
+        align-items: center;
+        gap: 125px;
+        
+        .contact-form-container{
+            max-width: 580px;
+
+            .contact-heading{
+                font-family: $default-font;
+                font-size: 48px;
+                font-weight: bold;
+                line-height: 120%;
+                color: $dark-blue;
+            }
+            .contact-description{
+                margin: 10px 0 0 0;
+                font-family: $default-font;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 120%;
+                color: $dark-blue;
+            }
+            .name{
+                grid-area: namee;
+                width: 250px;
+                height: 45px;
+                border: 2px solid $dark-blue;
+                padding-left: 18px;
+            }
+    
+            .lastName{
+                grid-area: last;
+                width: 250px;
+                height: 45px;
+                border: 2px solid $dark-blue;
+                padding-left: 18px;
+            }
+            .email{
+                grid-area: email;
+                width: 250px;
+                height: 45px;
+                border: 2px solid $dark-blue;
+                padding-left: 18px;
+            }
+    
+            .phone{
+                grid-area: phone;
+                width: 250px;
+                height: 45px;
+                border: 2px solid $dark-blue;
+                padding-left: 18px;
+            }
+    
+            .form-first-group{
+                margin: 35px 0 0 0;
+               
+                display: grid;
+                grid-template-areas:
+                "namee last"
+                "email phone";
+                column-gap: 30px;
+                row-gap: 18px;
+            }
+    
+            .form-second-group{
+                margin: 18px 0 0 0;
+                textarea{
+                    width: 558px;
+                    height: 100px;
+                    padding: 18px 0 0 18px;
+                    border: 2px solid $dark-blue;
+                }
+            }
+    
+            .form-submit-group{
+                display: flex;
+                align-items: center;
+                margin: 30px 0 0 0;
+                column-gap: 42px;
+    
+                button{
+                    padding: 18px 24px 18px 24px;
+                    font-family: $default-font;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 120%;
+                    color: #FFFFFF;
+                    background-color: $dark-blue;
+                   
+                    
+                }
+    
+                p{
+                    font-family: $default-font;
+                    font-size: 12px;
+                    font-weight: 400;
+                    color: $dark-blue;
+                }
+            }
+        }
+
     }
 }
 
@@ -496,6 +606,34 @@ header{
                         gap: 50px;
                     }
                 }
+            }
+        }
+    }
+
+    .contact-main{
+        .contact-inner{
+            gap: 50px;
+            .contact-form-container{
+                .form-first-group{
+                    display: block;
+
+                    .lastName{
+                        margin-top: 10px;
+                    }
+                    .email{
+                        margin-top: 10px;
+                    }
+                    .phone{
+                        margin-top: 10px;
+                    }
+                    
+                }
+                .form-second-group{
+                    textarea{
+                        width: 360px;
+                    }
+                }
+
             }
         }
     }
@@ -569,6 +707,23 @@ header{
                         gap: 20px;
                     }
                 }
+            }
+        }
+    }
+
+    .contact-main{
+        .contact-inner{
+            justify-content: center;
+            text-align: center;
+            .contact-left{
+                display: none;
+            }
+            .contact-form-container{
+                width: 100%;
+                .form-submit-group{
+                    justify-content: center;
+                }
+
             }
         }
     }
@@ -692,6 +847,24 @@ header{
             }
         }
     }
+
+    .contact-main{
+        .contact-inner{
+            .contact-form-container{
+                .form-second-group{
+                    textarea{
+                        width: 250px;
+                    }
+                }
+                .form-submit-group{
+                    display: block;
+                    p{
+                        margin: 15px 0 0 0;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media(max-width:380px){
@@ -783,6 +956,37 @@ header{
                         }
                     }
                 }
+            }
+        }
+    }
+
+    .contact-main{
+        .contact-inner{
+            gap: 50px;
+            .contact-form-container{
+                .form-first-group{
+                    display: block;
+
+                    .name{
+                        width: 200px;
+                    }
+                    .lastName{
+                        width: 200px;
+                    }
+                    .email{
+                        width: 200px;
+                    }
+                    .phone{
+                        width: 200px;
+                    }
+                    
+                }
+                .form-second-group{
+                    textarea{
+                        width: 200px;
+                    }
+                }
+
             }
         }
     }
