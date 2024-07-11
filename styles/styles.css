@@ -171,10 +171,10 @@ header .header-burger-menu .burger-bottom {
   color: #FFFFFF;
   background-color: #1E3240;
   padding: 18px 24px;
-  transition: scale 0.2s, background-color 0.4s;
+  transition: scale 0.2s, background-color 0.4s, box-shadow 0.4s;
 }
 .hero .hero-projects-button:hover {
-  box-shadow: -10px -10px 30px 4px rgba(0, 0, 0, 0.1), 10px 10px 30px 4px rgba(45, 78, 255, 0.15);
+  box-shadow: #1E3240 0px 0px 0px 2px, #1E3240 0px 4px 6px -1px, #1E3240 0px 1px 0px inset;
 }
 .hero .hero-projects-button:active {
   scale: 95%;
@@ -226,6 +226,7 @@ header .header-burger-menu .burger-bottom {
   font-size: 48px;
   line-height: 120%;
   color: #1E3240;
+  cursor: default;
 }
 .about-main .about-inner .about-right .about-description {
   font-family: "Mulish", sans-serif;
@@ -234,11 +235,13 @@ header .header-burger-menu .burger-bottom {
   line-height: 120%;
   color: #1E3240;
   margin: 40px 0 0 0;
+  cursor: default;
 }
 .about-main .about-inner .about-right .about-statistic-container {
   display: flex;
   margin: 40px 0 0 0;
   column-gap: 45px;
+  cursor: default;
 }
 .about-main .about-inner .about-right .about-statistic-container .about-statistic-heading {
   font-family: "Mulish", sans-serif;
@@ -266,6 +269,7 @@ header .header-burger-menu .burger-bottom {
   font-weight: bold;
   line-height: 120%;
   color: #1E3240;
+  cursor: default;
 }
 .projects-main .projects-inner .projects-description {
   margin: 15px 0 0 0;
@@ -274,11 +278,13 @@ header .header-burger-menu .burger-bottom {
   font-weight: normal;
   line-height: 120%;
   color: #1E3240;
+  cursor: default;
 }
 .projects-main .projects-inner .swiper {
   margin: 75px 0 0 0;
 }
 .projects-main .projects-inner .swiper .swiper-wrapper .swiper-slide {
+  cursor: grab;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -333,11 +339,13 @@ header .header-burger-menu .burger-bottom {
   line-height: 120%;
   color: #1E3240;
   text-align: center;
+  cursor: default;
 }
 .feedback-main .feedback-inner .swiper2 {
   margin: 75px 0 0 0;
 }
 .feedback-main .feedback-inner .swiper2 .swiper-wrapper .swiper-slide {
+  cursor: grab;
   display: flex;
   gap: 125px;
   justify-content: center;
@@ -347,7 +355,7 @@ header .header-burger-menu .burger-bottom {
   object-fit: cover;
 }
 .feedback-main .feedback-inner .swiper2 .swiper-wrapper .swiper-slide .swiper-description {
-  cursor: default;
+  cursor: grab;
 }
 .feedback-main .feedback-inner .swiper2 .swiper-wrapper .swiper-slide .swiper-description h4 {
   margin: 17px 0 0 0;
@@ -399,6 +407,7 @@ header .header-burger-menu .burger-bottom {
   font-weight: bold;
   line-height: 120%;
   color: #1E3240;
+  cursor: default;
 }
 .contact-main .contact-inner .contact-form-container .contact-description {
   margin: 10px 0 0 0;
@@ -407,6 +416,7 @@ header .header-burger-menu .burger-bottom {
   font-weight: 400;
   line-height: 120%;
   color: #1E3240;
+  cursor: default;
 }
 .contact-main .contact-inner .contact-form-container .name {
   grid-area: namee;
@@ -466,12 +476,18 @@ header .header-burger-menu .burger-bottom {
   line-height: 120%;
   color: #FFFFFF;
   background-color: #1E3240;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+}
+.contact-main .contact-inner .contact-form-container .form-submit-group button:hover {
+  box-shadow: #1E3240 0px 0px 0px 2px, #1E3240 0px 4px 6px -1px, #1E3240 0px 1px 0px inset;
 }
 .contact-main .contact-inner .contact-form-container .form-submit-group p {
   font-family: "Mulish", sans-serif;
   font-size: 12px;
   font-weight: 400;
   color: #1E3240;
+  cursor: default;
 }
 
 /* FOOTER */
@@ -492,6 +508,7 @@ header .header-burger-menu .burger-bottom {
 .footer .footer-inner .footer-inner-first-container .first-in-first .footer-contact-container .footer-contact-info {
   display: flex;
   column-gap: 8px;
+  cursor: default;
 }
 .footer .footer-inner .footer-inner-first-container .first-in-first .footer-contact-container .footer-contact-info p {
   font-family: "Mulish", sans-serif;
@@ -507,6 +524,7 @@ header .header-burger-menu .burger-bottom {
   gap: 75px;
 }
 .footer .footer-inner .footer-inner-first-container .second-in-first h5 {
+  cursor: default;
   font-family: "Mulish", sans-serif;
   font-size: 18px;
   font-weight: bold;
@@ -528,6 +546,7 @@ header .header-burger-menu .burger-bottom {
   font-size: 12px;
   font-weight: 400;
   color: #BDBDBD;
+  cursor: default;
 }
 
 /* MEDIA SECTION */

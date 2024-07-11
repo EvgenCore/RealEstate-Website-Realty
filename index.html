@@ -10,10 +10,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body id="body">
 
-    <header aria-label="header">
+    <header aria-label="header" id="header">
         <div class="container">
             <section class="header-inner" aria-label="header inner container">
                 <!-- LOGO -->
@@ -26,13 +27,13 @@
                             <a href="#" aria-label="navigation link to home">home</a>
                         </li>
                         <li>
-                            <a href="#" aria-label="navigation link to about">about</a>
+                            <a href="#about" aria-label="navigation link to about">about</a>
                         </li>
                         <li>
-                           <a href="#" aria-label="navigation link to project">project</a>
+                           <a href="#projects" aria-label="navigation link to project">project</a>
                         </li>
                         <li>
-                           <a href="#" aria-label="navigation link to contact">contact</a>
+                           <a href="#contact" aria-label="navigation link to contact">contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -42,16 +43,16 @@
                     
                     <ul aria-label="header navigation list">
                         <li>
-                            <a href="#" aria-label="navigation link to home">home</a>
+                            <a href="#header" id="burgerNavHome" aria-label="navigation link to home">home</a>
                         </li>
                         <li>
-                            <a href="#" aria-label="navigation link to about">about</a>
+                            <a href="#about" id="burgerNavAbout" aria-label="navigation link to about">about</a>
                         </li>
                         <li>
-                             <a href="#" aria-label="navigation link to project">project</a>
+                             <a href="#projects" id="burgerNavProject" aria-label="navigation link to project">project</a>
                         </li>
                         <li>
-                            <a href="#" aria-label="navigation link to contact">contact</a>
+                            <a href="#contact" id="burgerNavContact" aria-label="navigation link to contact">contact</a>
                         </li>
                     </ul>
 
@@ -73,9 +74,9 @@
     <main>
         
         <!-- HERO SECTION -->
-        <section class="hero" aria-label="section hero">
+        <section class="hero"  aria-label="section hero">
             <div class="container">
-                <section class="hero-inner" aria-label="section hero inner container">
+                <section class="hero-inner" data-aos="fade-right"  aria-label="section hero inner container">
                     <div >
                         <h1 class="hero-heading" aria-label="main heading">A home is built with love and dreams</h1>
                         <div class="hero-description-container">
@@ -83,8 +84,8 @@
                                 <p class="hero-description" aria-label="description">Real estate farm that makes your dreams true</p>
                                 <!-- BUTTONS -->
                                 <div class="hero-description-buttons-container">
-                                    <a href="#" class="hero-projects-button" aria-label="button - Our projects">Our projects</a>
-                                    <a href="#" class="hero-contact-button" aria-label="button - Contact us">Contact us</a>
+                                    <a href="#projects" class="hero-projects-button" aria-label="button - Our projects">Our projects</a>
+                                    <a href="#contact" class="hero-contact-button" aria-label="button - Contact us">Contact us</a>
                                 </div>
                             </div>
                             <div class="hero-arrow-container">
@@ -99,15 +100,15 @@
         </section>
 
         <!-- ABOUT SECTION -->
-        <section class="about-main" aria-label="section about">
+        <section class="about-main" id="about" aria-label="section about">
             <div class="container">
                 <section class="about-inner" aria-label="section about inner container">
 
-                    <section class="about-left" aria-label="about left container">
+                    <section class="about-left" data-aos="fade-right" aria-label="about left container">
                         <img src="./images/aboutBuilding.svg" class="about-building-img" alt="building image">
                     </section>
 
-                    <section class="about-right" aria-label="about right container">
+                    <section class="about-right" data-aos="fade-left" aria-label="about right container">
                         <h2 class="about-heading" aria-label="about heading">Award winning real estate company in Paris</h2>
                         <p class="about-description">Paris real estate is famous for its historic charm and high prices. The market includes Haussmann-style apartments, historic townhouses, and modern buildings</p>
                         <div class="about-statistic-container">
@@ -131,7 +132,7 @@
         </section>
 
         <!-- PROJECTS SECTION -->
-        <section class="projects-main" aria-label="section projects">
+        <section class="projects-main" id="projects" aria-label="section projects">
             <div class="container">
                 <section class="projects-inner" aria-label="section projects inner container">
                     
@@ -264,15 +265,15 @@
         </section>
 
         <!-- CONTACT SECTION -->
-        <section class="contact-main" aria-label="section contact">
+        <section class="contact-main" id="contact" aria-label="section contact">
             <div class="container">
                 <section class="contact-inner" aria-label="section contact inner container">
 
-                    <section class="contact-left" aria-label="contact left part with building photo">
+                    <section class="contact-left" data-aos="fade-right" aria-label="contact left part with building photo">
                         <img src="./images/contactImg.svg" alt="building photo">
                     </section>
 
-                    <section class="contact-form-container" aria-label="contact right part with contact form">
+                    <section class="contact-form-container" data-aos="fade-left" aria-label="contact right part with contact form">
                         <form action="/submit" >
                             <h4 class="contact-heading" aria-label="contact form heading">Contact us</h4>
                             <p class="contact-description" aria-label="contact form description">Feel free to contact us any time.</p> 
@@ -308,7 +309,7 @@
                 <section class="footer-inner-first-container" aria-label="footer inner first container">
 
                     <div class="first-in-first">
-                        <img src="./images/footerLogo.svg" class="footer-logo" alt="footer logo">
+                        <a href="#header"><img src="./images/footerLogo.svg" class="footer-logo" alt="footer logo"></a>
                         <div class="footer-contact-container">
                             <div class="footer-contact-info">
                                 <img src="./images/footerMapIcon.svg" alt="map icon">
@@ -328,10 +329,10 @@
                     <div class="second-in-first">
                         <section aria-label="Quick links container">
                             <h5>Quick links</h5>
-                            <p><a href="#" aria-label="navigation link to home">Home</a></p>
-                            <p><a href="#" aria-label="navigation link to about">About</a></p>
-                            <p><a href="#" aria-label="navigation link to project">Project</a></p>
-                            <p><a href="#" aria-label="navigation link to contact">Contact</a></p>
+                            <p><a href="#header" aria-label="navigation link to home">Home</a></p>
+                            <p><a href="#about" aria-label="navigation link to about">About</a></p>
+                            <p><a href="#projects" aria-label="navigation link to project">Project</a></p>
+                            <p><a href="#contact" aria-label="navigation link to contact">Contact</a></p>
                         </section>
 
                         <section aria-label="Legal Links container">
@@ -358,6 +359,8 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./scripts/main.js"></script>
+    
 </body>
 </html>
